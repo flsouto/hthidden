@@ -13,7 +13,7 @@ class HtHidden extends HtField{
 	}
 
 	function render(){
-		$this->attrs(['type'=>'hidden','value'=>$this->param->process()->output]);
+		$this->attrs(['type'=>'hidden','value'=>$this->value()]);
 		echo "<input {$this->attrs} />";
 	}
 
